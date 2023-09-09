@@ -1,49 +1,50 @@
 const quotes = [
   {
-    quotes:
-      "[스포츠서울 | 대전=김동영기자] SSG 최정(36)이 마침내 KBO리그에서 가장 많은 득점을 올린 사나이가 됐다. 이승엽(47) 감독을 넘어섰다. 통산 1356득점이다.",
+    quote: "The way to get started is to quit talking and begin doing.",
+    author: "Walt Disney",
   },
   {
-    quotes:
-      "최정은 6일 대전 한화생명이글스파크에서 열린 2023 KBO리그 정규시즌 한화와 주중 3연전 두 번째 경기에 3번 타자 3루수로 선발 출장해 3회까지 2안타 2타점 1득점을 기록했다",
+    quote: "Life is what happens when you're busy making other plans.",
+    author: "John Lennon",
   },
   {
-    quotes:
-      " 1회초 선제 적시 2루타를 날렸다. 후속타가 없어 득점은 없었다. 3회초 적시 2루타를 다시 쳤다. 그리고 기예르모 에레디아의 좌익선상 적시 2루타가 터졌다",
+    quote:
+      "The world is a book and those who do not travel read only one page.",
+    author: "Saint Augustine",
   },
   {
-    quotes:
-      "최정은 천천히 3루를 돌아 홈까지 들어왔다. 득점 성공이다. 올시즌 82번째 득점이었고, 역대 1356번째 득점이다. 이로써 기존 역대 득점 1위였던 이승엽 감독을 넘어섰다.",
+    quote: "Life is either a daring adventure or nothing at all.",
+    author: "Helen Keller",
   },
   {
-    quotes:
-      "전날 1득점으로 이승엽 감독과 같은 1355득점이 됐다. 하루 만에 득점을 추가하며 단독 1위가 됐다. 2017년 10월3일 이승엽 감독이 기록을 썼고, 2164일이 흘러 최정이 이승엽 감독을 넘었다 ",
+    quote: "To Travel is to Live",
+    author: "Hans Christian Andersen",
   },
   {
-    quotes:
-      "최정은 2005년 SK(현 SSG)에 1차 지명으로 입단했다. 올시즌까지 19년 동안 한 팀에서만 뛰고 있다. 단순히 오래 뛴 것이 아니다. 매 시즌 좋은 모습을 보인다. ‘꾸준함의 대명사’라 해도 과언이 아니다.",
+    quote: "Only a life lived for others is a life worthwhile.",
+    author: "Albert Einstein",
   },
   {
-    quotes:
-      "시즌 최다 득점 타이틀을 획득한 적은 없다. 2012년 85득점으로 2위에 오르는 등 8차례나 상위 10위 이내에 이름을 올렸다. 매 시즌 공격 지표 상위권에 들며 대신 차근차근 기록을 쌓았다.",
+    quote: "You only live once, but if you do it right, once is enough.",
+    author: "Mae West",
   },
   {
-    quotes:
-      "개인 한 경기 최다 득점은 4점으로 총 6차례 있었다. 특히 2017년 4월8일 문학 NC전에서 홈런 4개를 치면서 4득점을 올렸다. 개인 4번째 한 경기 4득점이다.",
+    quote: "Never go on trips with anyone you do not love.",
+    author: "Hemmingway",
   },
   {
-    quotes:
-      "또한 최정이 멀티 득점(2득점 이상)을 기록한 경기 총 299경기(4점-6경기, 3점-50경기, 2점-243경기)의 팀 승률은 무려 0.867에 달한다.",
+    quote: "We wander for distraction, but we travel for fulfilment.",
+    author: "Hilaire Belloc",
   },
   {
-    quotes:
-      "반대로 득점을 기록하지 못한 경기에서는 승률이 4할대로 현저히 낮아진다. 최정의 득점 여부가 팀 성적에도 큰 영향을 미친 것을 간접적으로 엿볼 수 있다.",
+    quote: "Travel expands the mind and fills the gap.",
+    author: "Sheda Savage",
   },
 ];
 
-
-const quote = document.querySelector("#quotes span:first-child");
-
+const quote = document.querySelector("#quote span:first-child");
+const author = document.querySelector("#quote span:last-child");
 const todaysQuote = quotes[Math.floor(Math.random() * quotes.length)];
 
-quote.innerText = todaysQuote.quotes;
+quote.innerText = todaysQuote.quote;
+author.innerText = todaysQuote.author;
